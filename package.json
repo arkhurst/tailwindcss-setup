@@ -19,7 +19,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "tailwindConfig": "npx tailwindcss build src/index.css -o src/tailwind.css",
+    "start": "npm run tailwindConfig && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
